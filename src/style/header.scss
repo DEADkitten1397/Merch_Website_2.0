@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    height: 190px;
+    width: 100%;
+    background-color: black;
+}
+
+.header img {
+    height: 300px;
+    margin-left: 15px;
+    margin-top: -40px;
+}
+
+.header p {
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+    color: grey;
+    font-size: 20px;
+}

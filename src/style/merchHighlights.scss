@@ -1,0 +1,23 @@
+.merchHighlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.merchArtwork img {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.merchHighlight label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: chartreuse;
+    font-size: 20px;
+    padding: 5px 0px 15px 0px;
+}
