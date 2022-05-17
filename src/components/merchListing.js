@@ -11,7 +11,7 @@ function Merch() {
                 <img src={Shoes} alt="Intertwined Tongues Shoes" />
             </div>
             <div className="merchDescription">
-                <h1>Intertwined Tongues Unisex Shoes</h1>
+                <h1>Intertwined Tongues Shoes</h1>
                 <p>These extremely comfortable high-top canvas sneakers with a high quality print are made to last and to impress - a truly original way to express oneself and inspire new fashion trends on the go.</p>
                 <h2>$45.00</h2>
             </div>

@@ -1,7 +1,10 @@
 .merchListing {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: chartreuse;
+    max-width: 1000px;
+    // margin-left: 175px;
 }
 .merchImage {
     display: flex;
@@ -12,6 +15,8 @@
 .merchDescription {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
     color: grey;
 }
     .merchDescription h1 {
@@ -21,7 +26,7 @@
     }
     .merchDescription p {
         font-size: 15px;
-        padding: 0px 5px 50px 5px;
+        padding: 0px 20px 50px 20px;
     }
     .merchDescription h2 {
         color: hotpink;
@@ -32,3 +37,17 @@
 //     height: 15px;
 //     width: 30px;
 // }
+
+@media(max-width:768px) {
+    .merchListing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+@media(min-width:770px) {
+    .merchListing {
+        margin-left: 175px;
+    }
+}

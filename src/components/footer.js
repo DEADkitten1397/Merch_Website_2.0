@@ -15,16 +15,16 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer__links'>
-                <Link to="https://www.facebook.com/ChronicTriggerband" className='footer__link'>
+                <Link to={{ pathname: "https://www.facebook.com/ChronicTriggerband"}} target="_blank" className='footer__link'>
                     <BsFacebook />
                 </Link>
-                <Link to="https://www.youtube.com/c/ChronicTriggerOfficial" className='footer__link'>
+                <Link to={{ pathname: "https://www.youtube.com/c/ChronicTriggerOfficial"}} target="_blank" className='footer__link'>
                     <BsYoutube />
                 </Link>
-                <Link to="https://www.instagram.com/chronictriggerofficial/" className='footer__link'>
+                <Link to={{ pathname: "https://www.instagram.com/chronictriggerofficial/"}} target="_blank" className='footer__link'>
                     <BsInstagram />
                 </Link>
-                <Link to="https://open.spotify.com/artist/1rF9m8JfLWSu3VE0cibhcr?si=jzgx4qlmSVWnpW7r50WCqQ" className='footer__link'>
+                <Link to={{ pathname: "https://open.spotify.com/artist/1rF9m8JfLWSu3VE0cibhcr?si=jzgx4qlmSVWnpW7r50WCqQ"}} target="_blank" className='footer__link'>
                     <BsSpotify />
                 </Link>
             </div>

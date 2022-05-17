@@ -5,7 +5,7 @@
     max-width: 1000px;
     height: 150px;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 15px 0px;
     background-color: black;
     color: grey;
 }
@@ -16,10 +16,8 @@
 }
     .navbar__logo img {
         height: 260px;
-    }
-// .navbar__icon {
-//     font-size: 30px;
-// }
+        padding: 0px 20px;
+    }   
 .navbar__links {
     flex: .4;
     display: flex;
@@ -52,10 +50,17 @@
         transform: scale(1.05);
     }
 @media(max-width:768px) {
+    .navbar__wrapper {
+        height: 130px;
+    }
     .navbar__links {
         display: none;
     }
     .navbar__burger {
         display: block;
+    }
+
+    .navbar__logo img {
+        height: 230px
     }
 }

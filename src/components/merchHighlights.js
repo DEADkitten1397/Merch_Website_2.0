@@ -10,10 +10,12 @@ class MerchHighlight extends Component {
         return (
             <div className='merchHighlight'>
                 <div className='merchArtwork'>
-                    <Link to="#">
+                    <Link to="/merch">
                         <img src={Tongues} alt="Intertwined Tongues"/>
                     </Link>
-                    <label>Intertwined Tongues</label>
+                    <Link to="/merch" className='merchLabel'>
+                        <label>Intertwined Tongues</label>
+                    </Link>
                 </div>
             </div>
         )
