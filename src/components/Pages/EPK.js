@@ -9,14 +9,14 @@ import ImgSix from "../../images/pdf/CHRONIC_TRIGGER_EPK-6.png";
 import "../../style/epk.scss"
 import Footer from "../footer";
 import Navbar from "../navbar";
-import Sidebar from "../sidebar";
+// import Sidebar from "../sidebar";
 
 
 const EPK = () => {
     return (
         <div className="EPKwrapper">
             <Navbar/>
-            <Sidebar/>
+            {/* <Sidebar/> */}
             <div className="EPKimages">
                 <img src={ImgOne} className="img" alt="Page One"></img>
                 <img src={ImgTwo} className="img" alt="Page Two"></img>

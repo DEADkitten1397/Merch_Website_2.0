@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Feature from '../images/banners/Kronos_News_Feature_Resized.jpg'
+import Feature from '../images/banners/Kronos_News_Feature_Resized.jpg';
 
 import "../style/main.scss"
 import "../style/rotatingBanner.scss"

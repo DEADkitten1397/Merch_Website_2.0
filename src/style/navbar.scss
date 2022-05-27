@@ -8,6 +8,7 @@
     padding: 15px 0px;
     background-color: black;
     color: grey;
+    position: relative;
 }
 .navbar__logo {
     display: flex;
@@ -19,48 +20,81 @@
         padding: 0px 20px;
     }   
 .navbar__links {
-    flex: .4;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-left: auto;
 }
-.navbar__link {
-    list-style: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: .5s;
-}
-    .navbar__item {
-        color: grey;
+    .navbar__links ul {
+        display: flex;
+        padding: 0;
+    }
+    .navbar__links li {
+        list-style-type: none;
+        margin: 0 1rem;
+    }
+    .navbar__links li a {
         text-decoration: none;
-        transition: .5s;
+        display: block;
+        width: 100%;
+        color: grey;
+        font-size: 25px;
+        transition: color 0.25s ease-in-out;
     }
-    .navbar__item:hover {
-        color: chartreuse;
-        transform: scale(1.05);
-    }
+        .navbar__links li a:hover {
+            color: chartreuse;
+        }
+
 .navbar__burger {
-    font-size: 35px;
-    display: none;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    padding: 0.5rem;
+    color: grey;
+    background-color: black;
     cursor: pointer;
-    transition: .5s;
+    transition: color 0.25s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
 }
     .navbar__burger:hover {
         color: chartreuse;
-        transform: scale(1.05);
     }
-@media(max-width:768px) {
-    .navbar__wrapper {
-        height: 130px;
-    }
-    .navbar__links {
-        display: none;
-    }
+
+@media screen and (max-width:768px) {
     .navbar__burger {
         display: block;
     }
-
-    .navbar__logo img {
-        height: 230px
+    .navbar__links ul {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: grey;
+        border-top: 1px solid black;
+        display: none;
     }
+    
+    .navbar__links.expanded ul {
+        display: block;
+        height: 300px;
+    }
+        .navbar__links li {
+            text-align: center;
+            margin: 0;
+        }
+            .navbar__links li a {
+                color: black;
+                width: 100%;
+                padding: 3rem 0;
+                text-decoration: none;
+                font-size: 25px;
+                transition: color 0.25s ease-in-out;
+            }
+            .navbar__links li a:hover {
+                color: chartreuse;
+            }
 }
+
