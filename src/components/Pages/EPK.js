@@ -7,8 +7,8 @@ import ImgFive from "../../images/pdf/CHRONIC_TRIGGER_EPK-5.png";
 import ImgSix from "../../images/pdf/CHRONIC_TRIGGER_EPK-6.png";
 
 import "../../style/epk.scss"
-import Footer from "../footer";
 import Navbar from "../navbar";
+import Footer from "../footer";
 
 const EPK = () => {
     return (

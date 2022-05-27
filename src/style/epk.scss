@@ -1,9 +1,3 @@
-.EPKwrapper {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: center;
-}
 .EPKimages {
     display: flex;
     flex-direction: column;
@@ -12,7 +6,7 @@
     justify-content: center;
 }
 
-.img {
+.EPKimages .img {
     display: flex;
     max-height: 2000px;
     height: 100%;

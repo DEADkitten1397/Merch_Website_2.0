@@ -10,7 +10,7 @@ function Navbar() {
 
     return(
         <nav className="navbar__wrapper">
-            <a href="/home" className="navbar__logo">
+            <a href="/" className="navbar__logo">
                 <img src={headerLogo} alt="Chronic Trigger Official Logo" />
             </a>
             <button className="navbar__burger" onClick={() => { setIsNavExpanded(!isNavExpanded); }} >
@@ -19,7 +19,7 @@ function Navbar() {
             <div className={ isNavExpanded ? "navbar__links expanded" : "navbar__links" }>
                 <ul>
                     <li>
-                        <a href="/home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/merch">Merch</a>
